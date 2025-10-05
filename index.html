@@ -1,1 +1,97 @@
-Go Pemograman Statis menggunakan HTML, CSS, Javascript.
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web - Adelia Fitri Pramushinta</title>
+   
+    <link rel="icon" type="image/png" href="favicon.png">
+
+  
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            text-align: center;
+            background-color: #f7d3e8;
+            color: #333;
+        }
+        header {
+            margin-top: 20px;
+        }
+        img.foto {
+            width: 100px;
+            height: 130px;
+            border-radius: 50%;
+            border: 3px solid #333;
+        }
+    
+        .sosmed {
+            margin: 20px;
+        }
+        .sosmed a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Halo, Saya Adelia Fitri Pramushinta</h1>
+        <h3>102022400358 | Fakultas Rekayasa Industri | Sistem Informasi</h3>
+    </header>
+
+    <img src="photo.jpg" alt="Foto Saya" class="foto">
+
+    <div class="sosmed">
+        <p>Sosial media:</p>
+        <a href="https://x.com/bnrymyu?t=rikT1aLc2zI0aBYbMvy8TA&s=09" target="_blank">X</a>
+        <a href="https://www.instagram.com/dellfrp?igsh=am9neWsxbXZvNDlm" target="_blank">Instagram</a>
+    </div>
+
+    <h2>Data Pribadi</h2>
+    <table>
+        <tr>
+            <th>Nama</th>
+            <td>Adelia Fitri Pramushinta</td>
+        </tr>
+        <tr>
+            <th>NIM</th>
+            <td>102022400358</td>
+        </tr>
+        <tr>
+            <th>Fakultas</th>
+            <td>Fakultas Rekayasa Industri</td>
+        </tr>
+        <tr>
+            <th>Program Studi</th>
+            <td>Sistem Informasi</td>
+        </tr>
+    </table>
+
+    <footer>
+        <p>Halaman ini terakhir diakses pada: 
+            <span id="datetime"></span>
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById("datetime").innerHTML = new Date().toLocaleString();
+    </script>
+</body>
+</html>
